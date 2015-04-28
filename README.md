@@ -3,7 +3,7 @@ An example of using Node-Red with both websockets and MQTT (via the Paho library
 from and to a web page also generated using Node-Red.
 
 You will need Node-Red installed correctly. The example also uses MQTT via Mosquitto with websocket support
-compiled in along with the Paho MQTT library for the browser. You probably could use Mosca instead. The example web page makes use of Zurb Foundation and also uses a client-side helper library 
+compiled in along with the Paho MQTT library for the browser. You probably could use Mosca instead. The example web page makes use of Zurb Foundation and also uses a client-side helper library called "ReconnectingWebSocket". There are also some global variables in context.global that I pass in from the Node-Red startup file that contain IP addresses and ports but you can set them manually.
 
 To use:
 Put the .js file where it is accessible to the browser. 

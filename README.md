@@ -13,12 +13,16 @@ In Node-Red:
 Create a websocket configuration pointing at "/ws/input".
 
 Create a subflow to contain the [output template](Master%20Page%20Subflow.md) (so you can reuse it multiple times). NB: Create the subflow then import the code.
+![nr_master_page_subflow](https://cloud.githubusercontent.com/assets/1591850/7379008/8f3f7a44-ede9-11e4-9016-10995a95a356.png)
 
 Create the [Input Listener subflow](Input%20Listener%20Subflow.md) so you can reuse it.
+![nr_input_listener](https://cloud.githubusercontent.com/assets/1591850/7379009/8f41a454-ede9-11e4-8d5d-a9ddf388b276.png)
 
 Load the [Input Page flow](Test%20Page%20Flow.md) which creates a test page with lots of input elements:
 
 Load the [websocket listener flow](Websocket%20Listener%20Flow.md) that deals with incoming websocket traffic on "/ws/input".
+
+![nr_liveupdate_flows](https://cloud.githubusercontent.com/assets/1591850/7379007/8f3ddb3a-ede9-11e4-86f0-643065d93b07.png)
 
 Note that the code in the files should be copied and then use the import feature in Node-Red to add it.
 
